@@ -1,0 +1,15 @@
+.header {
+    background-image: url(/img/hero.jpg);
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+    margin-bottom: 120px;
+}
+li{
+    cursor: pointer;
+}
+li:hover{
+    opacity: 0.5;
+}
+button{
+    cursor: pointer;
+}
