@@ -29,7 +29,7 @@
 
 <style scoped>
 .background-logo {
-    background-image: url(../../../public/img/back.svg);
+    background-image: url(/img/back.svg);
     background-repeat: no-repeat;
     background-position: left center;
     margin-left: 50px;
