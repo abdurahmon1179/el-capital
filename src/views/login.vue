@@ -21,7 +21,7 @@
         </div>
 
         <div>
-            <img class="login" src="../../../public/img/login.svg" alt="">
+            <img class="login" src="/img/login.svg" alt="">
         </div>
     </div>
 </template>

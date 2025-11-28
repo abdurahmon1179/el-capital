@@ -4,8 +4,8 @@
             <div class="flex gap-[200px]">
                 <div class="flex flex-col justify-between w-50">
                     <div class="flex gap-[70px]">
-                        <img src="../../../public/img/footer-logo.svg" alt="" class="h-[50px]">
-                        <img src="../../../public/img/logo2.svg" alt="" class="h-[50px]">
+                        <img src="/img/footer-logo.svg" alt="" class="h-[50px]">
+                        <img src="/img/logo2.svg" alt="" class="h-[50px]">
                     </div>
                     <p class="text-sm opacity-70">2025 © REALSOFT Барча ҳуқуқлар ҳимояланган</p>
                 </div>

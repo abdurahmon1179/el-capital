@@ -42,8 +42,8 @@
 import Container from "../layouts/index.vue"
 import { ref } from 'vue'
 
-import plusImg from "../../../public/img/plus.svg"
-import minusImg from '../../../public/img/minus.svg'
+import plusImg from "/img/plus.svg"
+import minusImg from '/img/minus.svg'
 
 
 const accordions = ref([

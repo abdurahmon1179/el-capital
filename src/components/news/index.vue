@@ -8,28 +8,28 @@
 
             <div class="flex flex-wrap justify-between gap-y-[28px]">
                 <div class="bg-white p-[24px] inline-block rounded-[18px]">
-                    <img class="mb-[24px]" src="../../../public/img/new.svg" alt="">
+                    <img class="mb-[24px]" src="/img/new.svg" alt="">
                     <h2 class="font-bold text-[22px] leading-[135%] w-[500px] pb-[10px]">Агентлик делегациясининг фонд бозори тажрибасини ўрганиш мақсадида Корея</h2>
                     <p class="text-[#00000080] text-[18px] leading-[145%] w-[500px] pb-[24px]">Истиқболли лойиҳалар миллий агентлиги (агентлик) вакилларининг Корея Республикаси фонд</p>
                     <p class="font-medium text-[18px] text-right">10 04 2025</p>
                 </div>
 
                 <div class="bg-white p-[24px] inline-block rounded-[18px]">
-                    <img class="mb-[24px]" src="../../../public/img/new.svg" alt="">
+                    <img class="mb-[24px]" src="/img/new.svg" alt="">
                     <h2 class="font-bold text-[22px] leading-[135%] w-[500px] pb-[10px]">Агентлик делегациясининг фонд бозори тажрибасини ўрганиш мақсадида Корея</h2>
                     <p class="text-[#00000080] text-[18px] leading-[145%] w-[500px] pb-[24px]">Истиқболли лойиҳалар миллий агентлиги (агентлик) вакилларининг Корея Республикаси фонд</p>
                     <p class="font-medium text-[18px] text-right">10 04 2025</p>
                 </div>
 
                 <div class="bg-white p-[24px] inline-block rounded-[18px]">
-                    <img class="mb-[24px]" src="../../../public/img/new.svg" alt="">
+                    <img class="mb-[24px]" src="/img/new.svg" alt="">
                     <h2 class="font-bold text-[22px] leading-[135%] w-[500px] pb-[10px]">Агентлик делегациясининг фонд бозори тажрибасини ўрганиш мақсадида Корея</h2>
                     <p class="text-[#00000080] text-[18px] leading-[145%] w-[500px] pb-[24px]">Истиқболли лойиҳалар миллий агентлиги (агентлик) вакилларининг Корея Республикаси фонд</p>
                     <p class="font-medium text-[18px] text-right">10 04 2025</p>
                 </div>
 
                 <div class="bg-white p-[24px] inline-block rounded-[18px]">
-                    <img class="mb-[24px]" src="../../../public/img/new.svg" alt="">
+                    <img class="mb-[24px]" src="/img/new.svg" alt="">
                     <h2 class="font-bold text-[22px] leading-[135%] w-[500px] pb-[10px]">Агентлик делегациясининг фонд бозори тажрибасини ўрганиш мақсадида Корея</h2>
                     <p class="text-[#00000080] text-[18px] leading-[145%] w-[500px] pb-[24px]">Истиқболли лойиҳалар миллий агентлиги (агентлик) вакилларининг Корея Республикаси фонд</p>
                     <p class="font-medium text-[18px] text-right">10 04 2025</p>
