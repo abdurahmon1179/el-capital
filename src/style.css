@@ -13,3 +13,6 @@ li:hover{
 button{
     cursor: pointer;
 }
+body{
+    font-family: SF Pro Display;
+}
