@@ -6,7 +6,8 @@
 
 <style scoped>
 .continer{
-    width: 1378px;
+    max-width: 1612px;
+    width: 100%;
     margin: 0 auto;
 }
 </style>

@@ -15,4 +15,5 @@ button{
 }
 body{
     font-family: SF Pro Display;
+    overflow-x: hidden;
 }
