@@ -16,14 +16,26 @@
 
                     <form @submit.prevent="login" class="flex flex-col gap-[18px] w-full">
                         <input
-                            v-model.trim="email"
-                            class="bg-[#EAEFEF33] border border-[#CACACA4D] py-[19.5px] pl-[24px] w-full rounded-[12px]"
-                            placeholder="Login" type="email">
+  v-model="email"
+  class="bg-[#EAEFEF33] border border-[#CACACA4D] py-[19.5px] pl-[24px] w-full rounded-[12px]"
+  placeholder="Login"
+  type="email"
+/>
+<p v-if="emailError" class="text-red-500 text-sm">
+  {{ emailError }}
+</p>
 
-                        <input
-                            v-model.trim="password"
-                            class="bg-[#EAEFEF33] border border-[#CACACA4D] py-[19.5px] pl-[24px] w-full rounded-[12px]"
-                            placeholder="Парол" type="password">
+
+ <input
+  v-model="password"
+  class="bg-[#EAEFEF33] border border-[#CACACA4D] py-[19.5px] pl-[24px] w-full rounded-[12px]"
+  placeholder="Парол"
+  type="password"
+/>
+<p v-if="passwordError" class="text-red-500 text-sm">
+  {{ passwordError }}
+</p>
+
                     
                         <button
                             class=" mt-[20px] w-full bg-[#002B5B] h-[64px] sm:h-[64px] rounded-[12px] text-white mb-[14px]">
@@ -64,40 +76,44 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref } from "vue"
+import { useRouter } from "vue-router"
 import { toast } from "vue3-toastify"
 import "vue3-toastify/dist/index.css"
+import { useForm, useField } from "vee-validate"
+import * as yup from "yup"
 
 const router = useRouter()
-
 const showForm = ref(false)
-const email = ref("")
-const password = ref("")
+
+const schema = yup.object({
+  email: yup
+    .string()
+    .required("Email мажбурий")
+    .email("Тўғри email киритинг"),
+  password: yup
+    .string()
+    .required("Парол мажбурий")
+    .min(6, "Парол камида 6 та белги бўлсин")
+})
+
+const { handleSubmit } = useForm({
+  validationSchema: schema
+})
+
+const { value: email, errorMessage: emailError } = useField("email")
+const { value: password, errorMessage: passwordError } = useField("password")
+
+const login = handleSubmit(() => {
+  toast.success("Муваффақиятли кирдингиз!", { autoClose: 2000 })
+  router.push("/")
+})
 
 function closeForm() {
-    showForm.value = false
+  showForm.value = false
 }
-
-function login() {
-    if (!email.value || !password.value) {
-        toast.error("Илтимос, барча майдонларни тўлдиринг", { autoClose: 2500 })
-        return
-    }
-
- 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-
-    if (!emailRegex.test(email.value)) {
-        toast.error("Илтимос, тўғри email киритинг!", { autoClose: 2500 })
-        return
-    }
-
-    toast.success("Муваффақиятли кирдингиз!", { autoClose: 2000 })
-    router.push("/")
-}
-
 </script>
+
 
 <style scoped>
 .background-logo {
@@ -105,6 +121,7 @@ function login() {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
+    font-family: Inter;
 }
 
 .fade-enter-active,
